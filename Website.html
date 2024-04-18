@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+    <script>
+    function setUsername(){
+      localStorage.setItem("username", prompt("Wie heißt du?"))
+    }
+    function getUsername(){
+      return localStorage.getItem("username");
+    }
+    function checkUsername(){
+      if (getUsername() == null) setUsername();
+      document.getElementById("username").innerHTML = getUsername();
+    }
+    </script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technikstern-Startseite</title>
+    <link rel="icon" type="image/vnd.icon" href="favicon.ico">
+    <style>
+        a:link {
+          color: cyan;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a:visited {
+          color: cyan;
+          background-color: transparent;
+          text-decoration: none;
+        }
+        
+        a:hover {
+          color: lightskyblue;
+          background-color: transparent;
+        }
+        
+        a:active {
+          color: rgb(255, 255, 255);
+          background-color: transparent;
+        }
+        body {
+          background-image: url('3b1b988c-2040-4257-bdc7-d1ebdd0183e5.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: cover;
+             }
+        </style>
+</head>
+<body onload="checkUsername()">
+    <div class="header">
+        <h1><u>Technikstern</u></h1>
+        <p><a href="Computer.html">Computer</a>&ensp;&ensp;&ensp;&ensp;<a href="Handys.html">Mobile Endgeräte</a>&ensp;&ensp;&ensp;&ensp;<a href="Sonstiges.html">Sonstiges</a>&ensp;&ensp;&ensp;&ensp;<a href="Warenkorb.html">Warenkorb</a></p>
+      </div>
+    <div class="content" style="color: aquamarine;"><p style="font-size: 25px;">Hallo,</p><p id="username" style="font-size: 30px;"></p><h2 style="color: aquamarine;"><u>Neuste Angebote</u></h2><img src="uY2dYX7_Qj6HeBHxICGtYA.png" class="center"><br><a style="color: aquamarine" href="PC mit Monitor.html">PC mit Monitor</a><br><br><br><img src="Technikstern-Handy.png" class="handys"><br><a style="color: aquamarine;" href="Technikstern-Phone.html">Technikstern-Handy</a><br><br><br><img src="MagischerStab.png" alt=""><br><a href="Sonstiges.html">Magischer Stab</a></div>
+    <div class="footer">
+        &ensp;<br>Infos<br><br>
+        <a href="Impressum.html">Impressum</a>&ensp;&ensp;&ensp;&ensp;<a href="Google Maps.html">Google Maps</a>&ensp;&ensp;&ensp;&ensp;<a href="Hier Drücken.html">Hier drücken!</a>&ensp;&ensp;&ensp;&ensp;<a href="Lizens.html">Rechtliches</a><br>&ensp;
+    </div>
+</body>
+</html>
