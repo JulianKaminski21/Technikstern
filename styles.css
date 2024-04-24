@@ -1,13 +1,14 @@
-
+body {
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
 
 #game-container {
     background-color: #ddd;
     border: 2px solid #333;
     padding: 10px;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
 }
 
 #gameCanvas {
